@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "5fbb6680-1f61-48f8-b2d6-b333e112ae1d",
+    "dt": "2026-02-20T13:31:19.888Z",
+    "src": "kis",
+    "queue": "emias.dict.update",
+    "message": "{\"id\":\"c619cbf4-1398-4467-b0cc-a8cbd5480d97\",\"descriptor\":\"ADM_EMPLOYEE_SNILS\",\"updateDt\":\"2026-02-20T16:31:19.309184317\"}",
+    "processdt": "2026-02-20T13:31:19.901Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "dd1dfd71-6fc7-40a7-ae06-48c3056eb3c3",
+    "dt": "2026-02-20T13:31:19.836Z",
+    "src": "kis",
+    "queue": "emias.dict.update",
+    "message": "{\"id\":\"33ea5e13-870d-43ee-bb06-f331080de9d5\",\"descriptor\":\"ADM_EMPLOYEE_FULL\",\"updateDt\":\"2026-02-20T16:31:19.12404287\"}",
+    "processdt": "2026-02-20T13:31:19.865Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "9fc7a807-11cf-4150-8fb1-1779b8935688",
+    "dt": "2026-02-20T13:26:23.593Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"49175e5c-82da-4d32-b5eb-732839108711\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-19T08:11:44+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.611Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 49175e5c-82da-4d32-b5eb-732839108711 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "5eaa82e4-a7a2-4865-8bcc-c27d766362ae",
+    "dt": "2026-02-20T13:26:23.568Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:20:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T11:10:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:00:48.807Z\",\"result\":\"ok\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T13:26:23.586Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "d868e847-6c68-4ca3-94ba-5e3d466cfd0f",
+    "dt": "2026-02-20T13:26:23.537Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:10:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T11:06:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:00:48.807Z\",\"result\":\"err\",\"errMsg\":\"Error: column \\\"empfio\\\" of relation \\\"patservicestateemp\\\" does not exist\\n    at PGProvider._sql (/pmu/server/app/services/DataProviders/PG.js:179:23)\\n    at PGProvider.sql (/pmu/server/app/services/DataProviders/CustomFS.js:74:21)\\n    at PGProvider.qb (/pmu/server/app/services/DataProviders/CustomFS.js:112:21)\\n    at CRUDSrv.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:116:32)\\n    at PGProvider.qCreate (/pmu/server/app/services/CRUDAdapter/CRUD.js:173:42)\\n    at PGProvider.jq (/pmu/server/app/services/DataProviders/CustomFS.js:142:34)\\n    at CRUD.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:24:44)\\n    at createEmployee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:81:23)\\n    at createEmployeeFee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:164:19)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T13:26:23.562Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "e035fcce-97ed-43ed-a4bb-284444dd0792",
+    "dt": "2026-02-20T13:26:23.512Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:16:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T15:00:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:16:48.807Z\",\"result\":\"err\",\"errMsg\":\"Error: column \\\"empfio\\\" of relation \\\"patservicestateemp\\\" does not exist\\n    at PGProvider._sql (/pmu/server/app/services/DataProviders/PG.js:179:23)\\n    at PGProvider.sql (/pmu/server/app/services/DataProviders/CustomFS.js:74:21)\\n    at PGProvider.qb (/pmu/server/app/services/DataProviders/CustomFS.js:112:21)\\n    at CRUDSrv.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:116:32)\\n    at PGProvider.qCreate (/pmu/server/app/services/CRUDAdapter/CRUD.js:173:42)\\n    at PGProvider.jq (/pmu/server/app/services/DataProviders/CustomFS.js:142:34)\\n    at CRUD.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:24:44)\\n    at createEmployee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:81:23)\\n    at createEmployeeFee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:164:19)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T13:26:23.531Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "77a767cc-3df4-4380-a117-8fd6f754a5f6",
+    "dt": "2026-02-20T13:26:23.498Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"b7b6b93d-75a3-48af-a412-b3a9679482a6\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-18T08:11:57+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.506Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение b7b6b93d-75a3-48af-a412-b3a9679482a6 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "ae6c7a25-9741-4d67-9158-1d2d44d12ac2",
+    "dt": "2026-02-20T13:26:23.475Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"d538e4b5-13a8-4e62-8d8e-9dc4b4f01c85\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-17T08:13:42+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.493Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение d538e4b5-13a8-4e62-8d8e-9dc4b4f01c85 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "5ed10cac-3197-4c83-9747-bdceb5bf676d",
+    "dt": "2026-02-20T13:26:23.455Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"c8dadead-1fd0-44c2-beb6-e23776b657aa\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-10T08:10:05+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.470Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение c8dadead-1fd0-44c2-beb6-e23776b657aa в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "2a68b5d5-2ecf-4626-b9fe-23bfcd9abde8",
+    "dt": "2026-02-20T13:26:23.430Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"cc19fab3-f511-4e91-b85c-b8602ee69684\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-09T08:12:28+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.450Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение cc19fab3-f511-4e91-b85c-b8602ee69684 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "9a480122-ee6f-4313-a76c-33a24f0cc2c4",
+    "dt": "2026-02-20T13:26:23.403Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"2684a118-8416-4b65-9f0c-3b8bacb398cc\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-08T08:09:47+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.421Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 2684a118-8416-4b65-9f0c-3b8bacb398cc в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "ecf9bfa8-6a3f-429f-8ba2-63c2d7bbc6f3",
+    "dt": "2026-02-20T13:26:23.380Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"2ad862cf-22b7-4078-bb8e-8d74d25a8ce8\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-07T08:11:25+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.397Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 2ad862cf-22b7-4078-bb8e-8d74d25a8ce8 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "817530d6-86a3-4e5b-b260-80fe57f39b7f",
+    "dt": "2026-02-20T13:26:23.358Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"fdcecc8f-92ae-4b15-9ba6-c2ee90b8c3a4\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-06T08:24:33+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.375Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение fdcecc8f-92ae-4b15-9ba6-c2ee90b8c3a4 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "fc64478d-2ee5-45e2-80c8-0ebadfc6e6f9",
+    "dt": "2026-02-20T13:26:23.333Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"5d852c1c-a496-45a2-927a-88419d14f64a\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-05T08:23:09+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.352Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 5d852c1c-a496-45a2-927a-88419d14f64a в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "a486c1bc-c6c9-4b27-ac4b-fda274811d1e",
+    "dt": "2026-02-20T13:26:23.305Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"c52b4b73-e887-4378-92a0-53c5ec2ea557\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-04T08:10:39+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.328Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение c52b4b73-e887-4378-92a0-53c5ec2ea557 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "11aa8569-e678-47a7-b77d-553ad15d7a98",
+    "dt": "2026-02-20T13:26:23.284Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"3821ebd2-7edf-4ba3-9381-b6dd52f8966f\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-03T08:05:13+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.299Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 3821ebd2-7edf-4ba3-9381-b6dd52f8966f в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "87543478-1796-4274-8d5c-78b9388308c1",
+    "dt": "2026-02-20T13:26:23.258Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"334e3d3d-fc35-4807-9c50-8cee5786e04d\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-01T08:06:44+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.278Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 334e3d3d-fc35-4807-9c50-8cee5786e04d в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "07130328-d475-4d24-8bc7-9d5b5ef35e68",
+    "dt": "2026-02-20T13:26:23.229Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"24f7b2c5-b12a-470d-b1ca-c31d082ea071\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-31T08:06:21+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.251Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 24f7b2c5-b12a-470d-b1ca-c31d082ea071 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "81bbacc0-c06c-4646-abdf-80820e24910b",
+    "dt": "2026-02-20T13:26:23.209Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"e22e3c36-94f4-4248-ab51-6538846946ea\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-30T08:13:24+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.223Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение e22e3c36-94f4-4248-ab51-6538846946ea в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "5abef035-26b0-4546-a9a1-b47ff072983d",
+    "dt": "2026-02-20T13:26:23.170Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"90242487-8fab-4168-bc7d-88ad7fef1676\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-29T08:11:42+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.202Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 90242487-8fab-4168-bc7d-88ad7fef1676 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "42c44527-8f5c-4d58-a2fe-7b02c1e4ecc0",
+    "dt": "2026-02-20T13:26:23.147Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"fcf1ae12-74de-4cb1-92fe-004e22cdb496\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-27T08:09:12+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.165Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение fcf1ae12-74de-4cb1-92fe-004e22cdb496 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "6272156c-31aa-4f04-b2f4-e9059e440090",
+    "dt": "2026-02-20T13:26:23.123Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"13239592-25e6-4bd3-99a4-9406c893ffbe\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-26T08:04:18+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.142Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 13239592-25e6-4bd3-99a4-9406c893ffbe в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "35622e0c-4a7b-4ffb-9fb4-3a4ae3578c50",
+    "dt": "2026-02-20T13:26:23.095Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"89134199-0ccb-48c6-923b-18087db7ccc9\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-23T08:15:34+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.117Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 89134199-0ccb-48c6-923b-18087db7ccc9 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "d93d9aa0-843b-4b34-acea-4eeac749e524",
+    "dt": "2026-02-20T13:26:23.067Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"0ce7a79c-74d1-4fb8-8bb6-79af6c83eef9\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-22T08:05:36+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.088Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 0ce7a79c-74d1-4fb8-8bb6-79af6c83eef9 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "e7048720-f953-4c7f-936a-8778bf43f6c8",
+    "dt": "2026-02-20T13:26:23.044Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"e1918b90-bf28-4fa8-aeee-831262435919\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-21T08:00:23+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.061Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение e1918b90-bf28-4fa8-aeee-831262435919 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "31a91354-a368-4623-89c6-1c088563411a",
+    "dt": "2026-02-20T13:26:23.017Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"d1716ad1-c06b-48b2-936b-c86aefb77a2a\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-19T11:31:11+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.039Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение d1716ad1-c06b-48b2-936b-c86aefb77a2a в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "600a522c-ce69-4382-bf63-c26b6f10124a",
+    "dt": "2026-02-20T13:26:22.994Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"cda41e0d-fc6b-4b91-966e-323b00ca9c53\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-15T16:40:34+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:23.012Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение cda41e0d-fc6b-4b91-966e-323b00ca9c53 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "fda33eec-2c70-4eb4-81c5-8d47ac3990dc",
+    "dt": "2026-02-20T13:26:22.966Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"6eefc0fb-dc94-444b-94a6-cc3d2a53b97f\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-15T15:45:55+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:22.989Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 6eefc0fb-dc94-444b-94a6-cc3d2a53b97f в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "c89d1426-bc6a-43f0-9860-17bde6a9c04c",
+    "dt": "2026-02-20T13:26:22.943Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"c6ecd91d-4d16-4e85-b45c-195cb29afc9c\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-14T13:04:11+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:22.961Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение c6ecd91d-4d16-4e85-b45c-195cb29afc9c в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "b1a35a57-0c7d-4710-9945-7d0e030e66b5",
+    "dt": "2026-02-20T13:26:22.917Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"e3192956-b33d-4147-9426-ba70e5a89de0\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-14T12:58:05+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:22.937Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение e3192956-b33d-4147-9426-ba70e5a89de0 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4a33364c-0af5-4cc2-9559-6d6fc9e5a62a",
+    "dt": "2026-02-20T13:26:22.891Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"ce84e7ff-7662-4b38-8f59-d05ec4f9f683\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2025-12-26T15:27:31+03:00\",\"employers\": [{\"empID\": \"b36ff5e7-f860-4863-bdb0-fa8fb1ead7bc\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:22.912Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение ce84e7ff-7662-4b38-8f59-d05ec4f9f683 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "5d89af7c-3a4e-4ab0-b1ad-8fce09f5c604",
+    "dt": "2026-02-20T13:26:22.846Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"65148037-678b-4703-a1f5-75555e7f35e8\",\"icd10Code\": \"Z55.0\",\"done\": 1,\"doneDate\": \"2025-12-24T11:52:11+03:00\",\"employers\": [{\"empID\": \"b36ff5e7-f860-4863-bdb0-fa8fb1ead7bc\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\"}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T13:26:22.885Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 65148037-678b-4703-a1f5-75555e7f35e8 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4300d1d4-37f7-41e7-9687-4639710d8b55",
+    "dt": "2026-02-20T13:24:43.168Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"Ультразвуковое исследование селезёнки\", \"count\": 1, \"nazID\": \"dc048659-7e63-40d9-ab6c-ca4638a41d08\", \"extIDs\": \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"06ef3ef7-29c4-413b-abb6-01098c19d14c\\\", \\\"serviceID\\\" : \\\"83378915-6408-4f2e-b3b9-334bc556ea6e\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"planDt\": \"2026-02-20T16:17:50Z\", \"nazView\": 2, \"caseType\": \"amb\", \"createDt\": \"2026-02-20T16:17:50Z\", \"nazTypeID\": \"226fd092-f692-11eb-8f6c-00155d03ca10\", \"patientID\": \"05c1eeec-4f80-4e1f-a79e-df10080be9c5\", \"payTypeID\": 5, \"nazStateID\": 2, \"creatorEmpID\": \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\"}",
+    "processdt": "2026-02-20T13:24:43.230Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "a25325f4-196e-4ccb-9cc7-e8c9d82b5c66",
+    "dt": "2026-02-20T13:16:12.926Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"Ультразвуковое исследование селезёнки\", \"count\": 1, \"nazID\": \"c19b6764-f91a-49e6-9088-7b3d4cf8c6cf\", \"extIDs\": \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"06ef3ef7-29c4-413b-abb6-01098c19d14c\\\", \\\"serviceID\\\" : \\\"83378915-6408-4f2e-b3b9-334bc556ea6e\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"planDt\": \"2026-02-20T16:14:54Z\", \"nazView\": 2, \"caseType\": \"amb\", \"createDt\": \"2026-02-20T16:14:54Z\", \"nazTypeID\": \"226fd092-f692-11eb-8f6c-00155d03ca10\", \"patientID\": \"05c1eeec-4f80-4e1f-a79e-df10080be9c5\", \"payTypeID\": 5, \"nazStateID\": 2, \"creatorEmpID\": \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\"}",
+    "processdt": "2026-02-20T13:16:13.138Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "a430a6fe-a5d4-4113-be96-439daae62efd",
+    "dt": "2026-02-20T13:14:43.065Z",
+    "src": "kis",
+    "queue": "emias.naz.delete",
+    "message": "{\"nazID\" : \"9b7c97a8-e62b-42ad-8a7c-8db9bb9748c5\", \"extIDs\" : \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"85731962-9664-45ef-a9ca-85780ed17337\\\", \\\"serviceID\\\" : \\\"e9e760a8-e6d1-47d6-be4b-bcf5daf4fcf3\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"doneDate\" : \"2026-02-20T16:14:16.704992+03:00\"}",
+    "processdt": "2026-02-20T13:14:43.105Z",
+    "result": "ok",
+    "errmsg": "Невозможно аннулировать услугу, т.к. она содержится в счете/предварительной смете"
+  },
+  {
+    "id": "91991541-401b-4ab5-a7d5-acd90d17a049",
+    "dt": "2026-02-20T13:14:42.978Z",
+    "src": "kis",
+    "queue": "emias.naz.delete",
+    "message": "{\"nazID\" : \"fb0ca001-4eeb-4687-a871-72a94a129625\", \"extIDs\" : \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"85731962-9664-45ef-a9ca-85780ed17337\\\", \\\"serviceID\\\" : \\\"e9e760a8-e6d1-47d6-be4b-bcf5daf4fcf3\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"doneDate\" : \"2026-02-20T16:14:16.653067+03:00\"}",
+    "processdt": "2026-02-20T13:14:43.002Z",
+    "result": "ok",
+    "errmsg": "Невозможно аннулировать услугу, т.к. она содержится в счете/предварительной смете"
+  },
+  {
+    "id": "bb4c4178-c218-452c-bc91-c43ce915d735",
+    "dt": "2026-02-20T13:14:42.876Z",
+    "src": "kis",
+    "queue": "emias.naz.delete",
+    "message": "{\"nazID\" : \"21d9df95-54bf-4e9c-ae24-c2cf64e3db2f\", \"extIDs\" : \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"85731962-9664-45ef-a9ca-85780ed17337\\\", \\\"serviceID\\\" : \\\"e9e760a8-e6d1-47d6-be4b-bcf5daf4fcf3\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"doneDate\" : \"2026-02-20T16:14:16.54163+03:00\"}",
+    "processdt": "2026-02-20T13:14:42.945Z",
+    "result": "ok",
+    "errmsg": "Невозможно аннулировать услугу, т.к. она содержится в счете/предварительной смете"
+  },
+  {
+    "id": "4fc7d126-8b3d-42c0-987b-da50622d6166",
+    "dt": "2026-02-20T13:12:12.807Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"ПСА общий\", \"count\": 1, \"nazID\": \"f1feeffd-7e0d-4afd-9acb-bee73964a3d5\", \"extIDs\": \"{\\\"patID\\\" : \\\"fb2fc1e9-d21d-4624-bb32-949b7d3063f6\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"createDate\\\" : \\\"2026-02-20T00:00:00\\\", \\\"priceTypeID\\\" : \\\"ad46f2a1-3ecb-4e1f-b8b7-8a6d9144be36\\\", \\\"orgID\\\" : null, \\\"attID\\\" : \\\"ce30e7e9-1e47-4466-9c8b-fd969259b721\\\", \\\"beginDate\\\" : \\\"2026-01-16\\\", \\\"endDate\\\" : null, \\\"attProgID\\\" : null, \\\"serviceID\\\" : \\\"db6d003c-f1de-427b-a456-0ee66df77c2d\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\", \\\"priceID\\\" : \\\"92a90ca4-adc5-4db1-ab1a-adfe10e40b00\\\"}\", \"planDt\": \"2026-02-20T16:09:17Z\", \"nazView\": 1, \"caseType\": \"hosp\", \"createDt\": \"2026-02-20T16:09:17Z\", \"nazTypeID\": \"67758569-36b8-11eb-8f30-00155d03ca10\", \"patientID\": \"fb2fc1e9-d21d-4624-bb32-949b7d3063f6\", \"payTypeID\": 5, \"nazStateID\": 2, \"creatorEmpID\": \"b279d6a7-195d-40a6-9e1f-45d20388ba27\"}",
+    "processdt": "2026-02-20T13:12:12.914Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "020c2433-92fa-4e74-ba12-87539ff8c377",
+    "dt": "2026-02-20T13:09:12.711Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"Ультразвуковое исследование мягких тканей\", \"count\": 1, \"nazID\": \"9b7c97a8-e62b-42ad-8a7c-8db9bb9748c5\", \"extIDs\": \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"85731962-9664-45ef-a9ca-85780ed17337\\\", \\\"serviceID\\\" : \\\"e9e760a8-e6d1-47d6-be4b-bcf5daf4fcf3\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"planDt\": \"2026-02-20T16:05:29Z\", \"nazView\": 2, \"caseType\": \"amb\", \"createDt\": \"2026-02-20T16:05:29Z\", \"nazTypeID\": \"226fcf40-f692-11eb-8f6c-00155d03ca10\", \"patientID\": \"05c1eeec-4f80-4e1f-a79e-df10080be9c5\", \"payTypeID\": 5, \"nazStateID\": 2, \"creatorEmpID\": \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\"}",
+    "processdt": "2026-02-20T13:09:12.759Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "6f0d81a2-5f9f-4ef1-a9ef-5e478174864e",
+    "dt": "2026-02-20T13:06:12.625Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"Ультразвуковое исследование мягких тканей\", \"count\": 1, \"nazID\": \"fb0ca001-4eeb-4687-a871-72a94a129625\", \"extIDs\": \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"85731962-9664-45ef-a9ca-85780ed17337\\\", \\\"serviceID\\\" : \\\"e9e760a8-e6d1-47d6-be4b-bcf5daf4fcf3\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"planDt\": \"2026-02-20T16:03:39Z\", \"nazView\": 2, \"caseType\": \"amb\", \"createDt\": \"2026-02-20T16:03:39Z\", \"nazTypeID\": \"226fcf40-f692-11eb-8f6c-00155d03ca10\", \"patientID\": \"05c1eeec-4f80-4e1f-a79e-df10080be9c5\", \"payTypeID\": 5, \"nazStateID\": 2, \"creatorEmpID\": \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\"}",
+    "processdt": "2026-02-20T13:06:12.690Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "221024ea-a840-4844-a6e8-b04ec1976013",
+    "dt": "2026-02-20T13:04:12.567Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"Ультразвуковое исследование мягких тканей\", \"count\": 1, \"nazID\": \"21d9df95-54bf-4e9c-ae24-c2cf64e3db2f\", \"extIDs\": \"{\\\"patID\\\" : \\\"05c1eeec-4f80-4e1f-a79e-df10080be9c5\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"patServiceID\\\" : \\\"85731962-9664-45ef-a9ca-85780ed17337\\\", \\\"serviceID\\\" : \\\"e9e760a8-e6d1-47d6-be4b-bcf5daf4fcf3\\\", \\\"attID\\\" : \\\"8d8661b9-df47-44eb-9a84-96b5186420d2\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\"}\", \"planDt\": \"2026-02-20T15:54:57Z\", \"nazView\": 2, \"caseType\": \"amb\", \"createDt\": \"2026-02-20T15:54:57Z\", \"nazTypeID\": \"226fcf40-f692-11eb-8f6c-00155d03ca10\", \"patientID\": \"05c1eeec-4f80-4e1f-a79e-df10080be9c5\", \"payTypeID\": 5, \"nazStateID\": 2, \"creatorEmpID\": \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\"}",
+    "processdt": "2026-02-20T13:04:12.612Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "edbc2514-2bf2-457b-b99b-2b5826746569",
+    "dt": "2026-02-20T12:58:42.394Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"nazID\" : \"eb15cf0e-ebec-44d3-a468-adfdf3285442\", \"nazTypeID\" : \"677630ac-36b8-11eb-8f30-00155d03ca10\", \"patientID\" : \"ec1bdc86-b392-4ccd-a87b-f58017abcb59\", \"extIDs\" : \"{}\", \"count\" : 1, \"name\" : \"Иммуногистохимическое исследование \", \"createDt\" : \"2026-02-20T15:55:59\", \"creatorEmpID\" : \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\", \"nazStateID\" : 2, \"payTypeID\" : 1, \"nazView\" : 1, \"planDt\" : \"2026-02-20T15:55:59\", \"caseType\" : \"amb\"}",
+    "processdt": "2026-02-20T12:58:42.422Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "08d235a9-a294-4b28-b830-e4200ceeb509",
+    "dt": "2026-02-20T12:58:12.371Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"nazID\" : \"a6118c3d-101a-44d5-a6ba-0c69bed4f6d7\", \"nazTypeID\" : \"677630ad-36b8-11eb-8f30-00155d03ca10\", \"patientID\" : \"ec1bdc86-b392-4ccd-a87b-f58017abcb59\", \"extIDs\" : \"{}\", \"count\" : 1, \"name\" : \"Молекулярно-генетическое исследование\", \"createDt\" : \"2026-02-20T15:55:32\", \"creatorEmpID\" : \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\", \"nazStateID\" : 2, \"payTypeID\" : 1, \"nazView\" : 1, \"planDt\" : \"2026-02-20T15:55:32\", \"caseType\" : \"amb\"}",
+    "processdt": "2026-02-20T12:58:12.403Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "5d50be0f-9ff8-49d7-9573-ece66a7fd44b",
+    "dt": "2026-02-20T12:57:42.353Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"nazID\" : \"9f592042-f5f4-46cf-82c1-1808f542b9a7\", \"nazTypeID\" : \"677630ab-36b8-11eb-8f30-00155d03ca10\", \"patientID\" : \"ec1bdc86-b392-4ccd-a87b-f58017abcb59\", \"extIDs\" : \"{}\", \"count\" : 1, \"name\" : \"Прижизненное патолого-анатомическое исследование биопсийного (операционного) материала\", \"createDt\" : \"2026-02-20T15:54:51\", \"creatorEmpID\" : \"6310fb91-61b6-4fb8-aa66-1b436e394a7b\", \"nazStateID\" : 2, \"payTypeID\" : 1, \"nazView\" : 1, \"planDt\" : \"2026-02-20T15:54:51\", \"caseType\" : \"amb\"}",
+    "processdt": "2026-02-20T12:57:42.387Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "7007c46e-d10a-40b0-b287-8ba6187c07cb",
+    "dt": "2026-02-20T12:56:42.311Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"Прием (осмотр, консультация) врача-уролога повторный\", \"count\": 1, \"nazID\": \"9a983694-db97-4b20-a4bf-86c49611aa92\", \"extIDs\": \"{\\\"patServiceID\\\":\\\"399ffcf6-82be-4db4-9802-8bfd0b7b2e46\\\",\\\"patID\\\":\\\"c21e8eec-b688-11ee-9aae-00155d220e74\\\"}\", \"planDt\": \"2026-02-20T06:00:00Z\", \"nazView\": 5, \"caseType\": \"amb\", \"createDt\": \"2026-02-15T20:37:54Z\", \"nazTypeID\": \"98f23c04-fa94-11e7-b0d5-0800274e4bfc\", \"patientID\": \"c21e8eec-b688-11ee-9aae-00155d220e74\", \"payTypeID\": 2, \"nazStateID\": 2, \"creatorEmpID\": \"12866cf0-f969-4804-954b-59911a494d21\"}",
+    "processdt": "2026-02-20T12:56:42.407Z",
+    "result": "ok",
+    "errmsg": "Назначение уже существует"
+  },
+  {
+    "id": "3cb23f10-0194-44df-875e-c4ab07de1829",
+    "dt": "2026-02-20T12:56:18.476Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"49175e5c-82da-4d32-b5eb-732839108711\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-19T08:11:44+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.494Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 49175e5c-82da-4d32-b5eb-732839108711 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "91d4478f-2e93-4016-b99f-37a175a6c745",
+    "dt": "2026-02-20T12:56:18.459Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:20:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T11:10:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:00:48.807Z\",\"result\":\"ok\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T12:56:18.471Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "8076d446-3059-4c6d-991b-cb200c2dd543",
+    "dt": "2026-02-20T12:56:18.436Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:10:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T11:06:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:00:48.807Z\",\"result\":\"err\",\"errMsg\":\"Error: column \\\"empfio\\\" of relation \\\"patservicestateemp\\\" does not exist\\n    at PGProvider._sql (/pmu/server/app/services/DataProviders/PG.js:179:23)\\n    at PGProvider.sql (/pmu/server/app/services/DataProviders/CustomFS.js:74:21)\\n    at PGProvider.qb (/pmu/server/app/services/DataProviders/CustomFS.js:112:21)\\n    at CRUDSrv.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:116:32)\\n    at PGProvider.qCreate (/pmu/server/app/services/CRUDAdapter/CRUD.js:173:42)\\n    at PGProvider.jq (/pmu/server/app/services/DataProviders/CustomFS.js:142:34)\\n    at CRUD.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:24:44)\\n    at createEmployee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:81:23)\\n    at createEmployeeFee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:164:19)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T12:56:18.455Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "777c087e-c6d2-4cec-9892-758c99c3d8bc",
+    "dt": "2026-02-20T12:56:18.401Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:16:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T15:00:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:16:48.807Z\",\"result\":\"err\",\"errMsg\":\"Error: column \\\"empfio\\\" of relation \\\"patservicestateemp\\\" does not exist\\n    at PGProvider._sql (/pmu/server/app/services/DataProviders/PG.js:179:23)\\n    at PGProvider.sql (/pmu/server/app/services/DataProviders/CustomFS.js:74:21)\\n    at PGProvider.qb (/pmu/server/app/services/DataProviders/CustomFS.js:112:21)\\n    at CRUDSrv.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:116:32)\\n    at PGProvider.qCreate (/pmu/server/app/services/CRUDAdapter/CRUD.js:173:42)\\n    at PGProvider.jq (/pmu/server/app/services/DataProviders/CustomFS.js:142:34)\\n    at CRUD.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:24:44)\\n    at createEmployee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:81:23)\\n    at createEmployeeFee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:164:19)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T12:56:18.429Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4ca92505-d866-462a-bddf-987cd76b5b6b",
+    "dt": "2026-02-20T12:56:18.377Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"b7b6b93d-75a3-48af-a412-b3a9679482a6\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-18T08:11:57+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.396Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение b7b6b93d-75a3-48af-a412-b3a9679482a6 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "eb8479a2-47d2-4758-852d-a88e9b13a31d",
+    "dt": "2026-02-20T12:56:18.361Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"d538e4b5-13a8-4e62-8d8e-9dc4b4f01c85\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-17T08:13:42+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.372Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение d538e4b5-13a8-4e62-8d8e-9dc4b4f01c85 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "f462698d-2246-44c4-ab54-a145c7a5898b",
+    "dt": "2026-02-20T12:56:18.341Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"c8dadead-1fd0-44c2-beb6-e23776b657aa\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-10T08:10:05+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.356Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение c8dadead-1fd0-44c2-beb6-e23776b657aa в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "bef4a32e-f7b7-4ae3-948a-c6165b656d06",
+    "dt": "2026-02-20T12:56:18.323Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"cc19fab3-f511-4e91-b85c-b8602ee69684\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-09T08:12:28+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.336Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение cc19fab3-f511-4e91-b85c-b8602ee69684 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "66042fd6-df24-4dd4-aba2-dd1fe919a1b5",
+    "dt": "2026-02-20T12:56:18.303Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"2684a118-8416-4b65-9f0c-3b8bacb398cc\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-08T08:09:47+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.317Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 2684a118-8416-4b65-9f0c-3b8bacb398cc в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "405b7841-1fe9-4c1e-bca8-8f48807adcbf",
+    "dt": "2026-02-20T12:56:18.287Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"2ad862cf-22b7-4078-bb8e-8d74d25a8ce8\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-07T08:11:25+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.294Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 2ad862cf-22b7-4078-bb8e-8d74d25a8ce8 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4d9a6ec8-75c5-4d0a-b0a5-7738d8ee2563",
+    "dt": "2026-02-20T12:56:18.259Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"fdcecc8f-92ae-4b15-9ba6-c2ee90b8c3a4\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-06T08:24:33+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.281Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение fdcecc8f-92ae-4b15-9ba6-c2ee90b8c3a4 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "2a334ca5-76c6-4e87-95f5-3e9a54bd292d",
+    "dt": "2026-02-20T12:56:18.240Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"5d852c1c-a496-45a2-927a-88419d14f64a\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-05T08:23:09+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.254Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 5d852c1c-a496-45a2-927a-88419d14f64a в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "80e0027b-b547-4fb7-a375-e35070fe8dcb",
+    "dt": "2026-02-20T12:56:18.214Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"c52b4b73-e887-4378-92a0-53c5ec2ea557\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-04T08:10:39+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.235Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение c52b4b73-e887-4378-92a0-53c5ec2ea557 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "d494dd45-785b-4aef-936c-3632b7f2160c",
+    "dt": "2026-02-20T12:56:18.188Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"3821ebd2-7edf-4ba3-9381-b6dd52f8966f\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-03T08:05:13+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.209Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 3821ebd2-7edf-4ba3-9381-b6dd52f8966f в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "92f718af-4bc6-4b33-84e0-62330f01c013",
+    "dt": "2026-02-20T12:56:18.146Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"334e3d3d-fc35-4807-9c50-8cee5786e04d\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-01T08:06:44+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.183Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 334e3d3d-fc35-4807-9c50-8cee5786e04d в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "d2197046-2213-46ed-8dc2-0ccaa2645f82",
+    "dt": "2026-02-20T12:56:18.122Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"24f7b2c5-b12a-470d-b1ca-c31d082ea071\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-31T08:06:21+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.140Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 24f7b2c5-b12a-470d-b1ca-c31d082ea071 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "756b6aa9-162f-4726-8f91-0d3fca840d83",
+    "dt": "2026-02-20T12:56:18.099Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"e22e3c36-94f4-4248-ab51-6538846946ea\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-30T08:13:24+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.117Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение e22e3c36-94f4-4248-ab51-6538846946ea в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "64d29220-8a0e-4d9b-9026-d9e71e0397f8",
+    "dt": "2026-02-20T12:56:18.072Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"90242487-8fab-4168-bc7d-88ad7fef1676\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-29T08:11:42+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.094Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 90242487-8fab-4168-bc7d-88ad7fef1676 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "eacaee40-052c-4abb-88ac-f1af0e85cc40",
+    "dt": "2026-02-20T12:56:18.047Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"fcf1ae12-74de-4cb1-92fe-004e22cdb496\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-27T08:09:12+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.065Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение fcf1ae12-74de-4cb1-92fe-004e22cdb496 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "1c8071d5-9765-4616-92d5-8caf6c4cbe65",
+    "dt": "2026-02-20T12:56:18.028Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"13239592-25e6-4bd3-99a4-9406c893ffbe\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-26T08:04:18+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.042Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 13239592-25e6-4bd3-99a4-9406c893ffbe в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "24c1497e-2424-47b1-8669-6c5954d90bb6",
+    "dt": "2026-02-20T12:56:17.998Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"89134199-0ccb-48c6-923b-18087db7ccc9\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-23T08:15:34+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:18.023Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 89134199-0ccb-48c6-923b-18087db7ccc9 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4269b7de-e12e-49e9-8678-e54b29b1115a",
+    "dt": "2026-02-20T12:56:17.973Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"0ce7a79c-74d1-4fb8-8bb6-79af6c83eef9\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-22T08:05:36+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.992Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 0ce7a79c-74d1-4fb8-8bb6-79af6c83eef9 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "254777df-992f-4100-a825-60c4d814cf5c",
+    "dt": "2026-02-20T12:56:17.951Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"e1918b90-bf28-4fa8-aeee-831262435919\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-21T08:00:23+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.967Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение e1918b90-bf28-4fa8-aeee-831262435919 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4b1a2156-2cb9-4305-924d-e2696987378c",
+    "dt": "2026-02-20T12:56:17.932Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"d1716ad1-c06b-48b2-936b-c86aefb77a2a\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-19T11:31:11+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.947Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение d1716ad1-c06b-48b2-936b-c86aefb77a2a в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "98ede404-da5d-4733-83bc-13758d5f2ef0",
+    "dt": "2026-02-20T12:56:17.911Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"cda41e0d-fc6b-4b91-966e-323b00ca9c53\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-15T16:40:34+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.925Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение cda41e0d-fc6b-4b91-966e-323b00ca9c53 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4903f330-fe4c-4fa0-ba2c-0d6552ac2985",
+    "dt": "2026-02-20T12:56:17.882Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"6eefc0fb-dc94-444b-94a6-cc3d2a53b97f\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-15T15:45:55+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.905Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 6eefc0fb-dc94-444b-94a6-cc3d2a53b97f в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "fc5b7072-4695-44c1-a71a-3ec713c2352e",
+    "dt": "2026-02-20T12:56:17.855Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"c6ecd91d-4d16-4e85-b45c-195cb29afc9c\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-14T13:04:11+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.877Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение c6ecd91d-4d16-4e85-b45c-195cb29afc9c в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "93a05e56-ce10-4707-bcb4-8f73e439de7e",
+    "dt": "2026-02-20T12:56:17.833Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"e3192956-b33d-4147-9426-ba70e5a89de0\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-01-14T12:58:05+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.850Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение e3192956-b33d-4147-9426-ba70e5a89de0 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "70eeb36f-6477-4c2f-9e76-bfe2da3ba04e",
+    "dt": "2026-02-20T12:56:17.809Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"ce84e7ff-7662-4b38-8f59-d05ec4f9f683\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2025-12-26T15:27:31+03:00\",\"employers\": [{\"empID\": \"b36ff5e7-f860-4863-bdb0-fa8fb1ead7bc\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.827Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение ce84e7ff-7662-4b38-8f59-d05ec4f9f683 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "38803241-83a0-404f-b708-a171560901d5",
+    "dt": "2026-02-20T12:56:17.784Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"65148037-678b-4703-a1f5-75555e7f35e8\",\"icd10Code\": \"Z55.0\",\"done\": 1,\"doneDate\": \"2025-12-24T11:52:11+03:00\",\"employers\": [{\"empID\": \"b36ff5e7-f860-4863-bdb0-fa8fb1ead7bc\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\"}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:56:17.803Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 65148037-678b-4703-a1f5-75555e7f35e8 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "29c6d276-fe93-4b6b-8938-f66a1f4bd0f7",
+    "dt": "2026-02-20T12:56:12.270Z",
+    "src": "kis",
+    "queue": "emias.naz.add",
+    "message": "{\"name\": \"ПСА общий\", \"count\": 1, \"nazID\": \"59210fa7-4a05-4e52-b306-196086806cb2\", \"extIDs\": \"{\\\"patID\\\" : \\\"fb2fc1e9-d21d-4624-bb32-949b7d3063f6\\\", \\\"nodeType\\\" : \\\"SERVICE\\\", \\\"createDate\\\" : \\\"2026-02-20T00:00:00\\\", \\\"priceTypeID\\\" : \\\"ad46f2a1-3ecb-4e1f-b8b7-8a6d9144be36\\\", \\\"orgID\\\" : null, \\\"attID\\\" : \\\"ce30e7e9-1e47-4466-9c8b-fd969259b721\\\", \\\"beginDate\\\" : \\\"2026-01-16\\\", \\\"endDate\\\" : null, \\\"attProgID\\\" : null, \\\"serviceID\\\" : \\\"db6d003c-f1de-427b-a456-0ee66df77c2d\\\", \\\"dictID\\\" : \\\"980c6a7f-3c9a-4c15-8ba1-eff0dbbef06e\\\", \\\"priceID\\\" : \\\"92a90ca4-adc5-4db1-ab1a-adfe10e40b00\\\"}\", \"planDt\": \"2026-02-20T15:53:34Z\", \"nazView\": 1, \"caseType\": \"hosp\", \"createDt\": \"2026-02-20T15:53:34Z\", \"nazTypeID\": \"67758569-36b8-11eb-8f30-00155d03ca10\", \"patientID\": \"fb2fc1e9-d21d-4624-bb32-949b7d3063f6\", \"payTypeID\": 5, \"nazStateID\": 2, \"creatorEmpID\": \"b279d6a7-195d-40a6-9e1f-45d20388ba27\"}",
+    "processdt": "2026-02-20T12:56:12.417Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "b0071232-458f-4788-b88e-e2c8a816e66e",
+    "dt": "2026-02-20T12:56:04.230Z",
+    "src": "kis",
+    "queue": "emias.dict.update",
+    "message": "{\"id\":\"c5d10365-336e-4a7f-bc29-10159e7223ad\",\"descriptor\":\"NAZ_TYPE\",\"updateDt\":\"2026-02-20T15:56:03.726981795\"}",
+    "processdt": "2026-02-20T12:56:04.248Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "9ead9f98-f1ec-4f0c-9c05-f1c58b4b3560",
+    "dt": "2026-02-20T12:56:01.020Z",
+    "src": "kis",
+    "queue": "emias.dict.update",
+    "message": "{\"id\":\"d323e3a5-0d23-4223-9f19-d1f683c0907b\",\"descriptor\":\"NAZ_FULL\",\"updateDt\":\"2026-02-20T15:56:00.497541773\"}",
+    "processdt": "2026-02-20T12:56:01.064Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "4fabc430-993e-4d58-ba59-b164ff40e3cb",
+    "dt": "2026-02-20T12:49:49.365Z",
+    "src": "pmu",
+    "queue": "MedicalAppointmentUpdates",
+    "message": "[{\"value\":\"{\\\"eventID\\\":\\\"15d61082-f154-4dd5-bae6-16716ec009e6\\\",\\\"eventState\\\":\\\"ACTIVE\\\",\\\"eventBegin\\\":\\\"2026-02-20T05:40:00.000Z\\\",\\\"eventEnd\\\":\\\"2026-02-20T06:00:00.000Z\\\",\\\"empID\\\":\\\"b36ff5e7-f860-4863-bdb0-fa8fb1ead7bc\\\",\\\"roomID\\\":\\\"f2fed1b4-db83-4ef6-956a-ad77f79d57dc\\\",\\\"roomName\\\":\\\"11\\\",\\\"payType\\\":6,\\\"creatorID\\\":\\\"1a5d3d3b-b79d-457e-82fc-9e3d438afe5a\\\",\\\"patient\\\":{\\\"id\\\":\\\"011096e5-47ef-4cd1-a5ac-44d862338f41\\\",\\\"surname\\\":\\\"КОНОВАЛОВА\\\",\\\"name\\\":\\\"ТАТЬЯНА\\\",\\\"patron\\\":\\\"АНДРЕЕВНА\\\",\\\"sex\\\":2,\\\"birthDate\\\":\\\"1995-10-18\\\",\\\"phone\\\":\\\"+79031733083\\\"},\\\"assignments\\\":[{\\\"nazId\\\":\\\"27f1c641-06e6-489f-b31f-60b08986dbda\\\",\\\"nazName\\\":\\\"Ультразвуковое исследование матки и придатков трансабдоминальное\\\",\\\"serviceName\\\":null,\\\"paid\\\":0}]}\"}]",
+    "processdt": "2026-02-20T12:49:49.420Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "d324e08a-2715-4105-bd9d-d66ddd1d423e",
+    "dt": "2026-02-20T12:49:49.291Z",
+    "src": "pmu",
+    "queue": "pmu.naz.payment.type.change",
+    "message": "{\"nazID\":\"27f1c641-06e6-489f-b31f-60b08986dbda\",\"payTypeID\":6,\"updateDate\":\"2026-02-20 15:49:49\",\"userID\":\"1a5d3d3b-b79d-457e-82fc-9e3d438afe5a\"}",
+    "processdt": "2026-02-20T12:50:19.343Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "be22f519-9881-4a8d-b4dd-561c5fa33ed0",
+    "dt": "2026-02-20T12:49:49.261Z",
+    "src": "pmu",
+    "queue": "pmu.naz.info.change",
+    "message": "{\"nazID\":\"27f1c641-06e6-489f-b31f-60b08986dbda\",\"eventID\":\"15d61082-f154-4dd5-bae6-16716ec009e6\",\"begDt\":\"2026-02-20 08:40:00\",\"endDt\":\"2026-02-20 09:00:00\",\"empID\":\"b36ff5e7-f860-4863-bdb0-fa8fb1ead7bc\",\"deptID\":\"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"updateDt\":\"2026-02-20 15:49:47\"}",
+    "processdt": "2026-02-20T12:50:19.306Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "6441545a-d7d6-48e6-b381-fbacebfc80e0",
+    "dt": "2026-02-20T12:49:47.953Z",
+    "src": "pmu",
+    "queue": "MedicalAppointmentUpdates",
+    "message": "[{\"value\":\"{\\\"eventID\\\":\\\"15d61082-f154-4dd5-bae6-16716ec009e6\\\",\\\"eventState\\\":\\\"ACTIVE\\\",\\\"eventBegin\\\":\\\"2026-02-20T05:40:00.000Z\\\",\\\"eventEnd\\\":\\\"2026-02-20T06:00:00.000Z\\\",\\\"empID\\\":\\\"b36ff5e7-f860-4863-bdb0-fa8fb1ead7bc\\\",\\\"roomID\\\":\\\"f2fed1b4-db83-4ef6-956a-ad77f79d57dc\\\",\\\"roomName\\\":\\\"11\\\",\\\"payType\\\":6,\\\"creatorID\\\":\\\"1a5d3d3b-b79d-457e-82fc-9e3d438afe5a\\\",\\\"patient\\\":{\\\"id\\\":\\\"011096e5-47ef-4cd1-a5ac-44d862338f41\\\",\\\"surname\\\":\\\"КОНОВАЛОВА\\\",\\\"name\\\":\\\"ТАТЬЯНА\\\",\\\"patron\\\":\\\"АНДРЕЕВНА\\\",\\\"sex\\\":2,\\\"birthDate\\\":\\\"1995-10-18\\\",\\\"phone\\\":\\\"+79031733083\\\"},\\\"assignments\\\":null}\"}]",
+    "processdt": "2026-02-20T12:49:47.987Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "58c89481-6a7a-4afd-90a1-67cf52f268cd",
+    "dt": "2026-02-20T12:41:32.157Z",
+    "src": "pmu",
+    "queue": "MedicalAppointmentUpdates",
+    "message": "[{\"value\":\"{\\\"eventID\\\":\\\"3ba8f7f1-999e-4084-a7fe-f927cfb3a1f4\\\",\\\"eventState\\\":\\\"ACTIVE\\\",\\\"eventBegin\\\":\\\"2026-02-20T10:00:00.000Z\\\",\\\"eventEnd\\\":\\\"2026-02-20T10:20:00.000Z\\\",\\\"empID\\\":\\\"e12d8937-5241-4fd7-8a56-244499484f52\\\",\\\"roomID\\\":\\\"6eb30b6b-715c-4efb-bd15-66363f84178c\\\",\\\"roomName\\\":\\\"Кабинет 205\\\",\\\"payType\\\":1,\\\"creatorID\\\":\\\"1a5d3d3b-b79d-457e-82fc-9e3d438afe5a\\\",\\\"patient\\\":{\\\"id\\\":\\\"a5012eb6-b681-11ee-9aa8-00155d220e74\\\",\\\"surname\\\":\\\"ХОПТА\\\",\\\"name\\\":\\\"МИРА\\\",\\\"patron\\\":\\\"ИВАНОВНА\\\",\\\"sex\\\":2,\\\"birthDate\\\":\\\"1967-07-28\\\",\\\"phone\\\":\\\"+79167703900\\\"},\\\"assignments\\\":[{\\\"nazId\\\":\\\"82366c85-5d50-4e1d-ad5e-0972123c0c6e\\\",\\\"nazName\\\":\\\"Прием (осмотр, консультация) врача-хирурга первичный\\\",\\\"serviceName\\\":null,\\\"paid\\\":0}]}\"}]",
+    "processdt": "2026-02-20T12:41:32.197Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "eaa94eb4-2fb3-4fb7-abf6-a023f7d2a610",
+    "dt": "2026-02-20T12:41:32.086Z",
+    "src": "pmu",
+    "queue": "pmu.naz.payment.type.change",
+    "message": "{\"nazID\":\"82366c85-5d50-4e1d-ad5e-0972123c0c6e\",\"payTypeID\":1,\"updateDate\":\"2026-02-20 15:41:31\",\"userID\":\"1a5d3d3b-b79d-457e-82fc-9e3d438afe5a\"}",
+    "processdt": "2026-02-20T12:42:02.148Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "05bc8c1b-ed74-4f23-8015-a77b37a53880",
+    "dt": "2026-02-20T12:41:32.052Z",
+    "src": "pmu",
+    "queue": "pmu.naz.info.change",
+    "message": "{\"nazID\":\"82366c85-5d50-4e1d-ad5e-0972123c0c6e\",\"eventID\":\"3ba8f7f1-999e-4084-a7fe-f927cfb3a1f4\",\"begDt\":\"2026-02-20 13:00:00\",\"endDt\":\"2026-02-20 13:20:00\",\"empID\":\"e12d8937-5241-4fd7-8a56-244499484f52\",\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"updateDt\":\"2026-02-20 15:41:30\",\"referral\":{\"id\":\"7bff8534-9aa3-470a-a403-ab7fb0a03d64\"}}",
+    "processdt": "2026-02-20T12:42:02.120Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "c04d9517-a2e5-4b24-a073-88eb66797311",
+    "dt": "2026-02-20T12:41:30.996Z",
+    "src": "pmu",
+    "queue": "MedicalAppointmentUpdates",
+    "message": "[{\"value\":\"{\\\"eventID\\\":\\\"3ba8f7f1-999e-4084-a7fe-f927cfb3a1f4\\\",\\\"eventState\\\":\\\"ACTIVE\\\",\\\"eventBegin\\\":\\\"2026-02-20T10:00:00.000Z\\\",\\\"eventEnd\\\":\\\"2026-02-20T10:20:00.000Z\\\",\\\"empID\\\":\\\"e12d8937-5241-4fd7-8a56-244499484f52\\\",\\\"roomID\\\":\\\"6eb30b6b-715c-4efb-bd15-66363f84178c\\\",\\\"roomName\\\":\\\"Кабинет 205\\\",\\\"payType\\\":1,\\\"creatorID\\\":\\\"1a5d3d3b-b79d-457e-82fc-9e3d438afe5a\\\",\\\"patient\\\":{\\\"id\\\":\\\"a5012eb6-b681-11ee-9aa8-00155d220e74\\\",\\\"surname\\\":\\\"ХОПТА\\\",\\\"name\\\":\\\"МИРА\\\",\\\"patron\\\":\\\"ИВАНОВНА\\\",\\\"sex\\\":2,\\\"birthDate\\\":\\\"1967-07-28\\\",\\\"phone\\\":\\\"+79167703900\\\"},\\\"assignments\\\":null}\"}]",
+    "processdt": "2026-02-20T12:41:31.034Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "6da2e589-6a8f-4e73-bf0f-a7ba400ea307",
+    "dt": "2026-02-20T12:26:57.692Z",
+    "src": "pmu",
+    "queue": "MedicalAppointmentUpdates",
+    "message": "[{\"value\":\"{\\\"eventID\\\":\\\"b11451cf-3f78-4d85-b6b8-9c09033444cf\\\",\\\"eventState\\\":\\\"CANCELLED\\\",\\\"eventBegin\\\":\\\"2026-02-20T10:00:00.000Z\\\",\\\"eventEnd\\\":\\\"2026-02-20T10:20:00.000Z\\\",\\\"empID\\\":\\\"e12d8937-5241-4fd7-8a56-244499484f52\\\",\\\"roomID\\\":\\\"6eb30b6b-715c-4efb-bd15-66363f84178c\\\",\\\"roomName\\\":\\\"Кабинет 205\\\",\\\"payType\\\":1,\\\"creatorID\\\":\\\"1a5d3d3b-b79d-457e-82fc-9e3d438afe5a\\\",\\\"patient\\\":{\\\"id\\\":\\\"e61a7dc4-b67f-11ee-9aa6-00155d220e74\\\",\\\"surname\\\":\\\"ТУРУСОВА\\\",\\\"name\\\":\\\"ЗИНАИДА\\\",\\\"patron\\\":\\\"ВАСИЛЬЕВНА\\\",\\\"sex\\\":2,\\\"birthDate\\\":\\\"1947-03-06\\\",\\\"phone\\\":\\\"+79150175800\\\"},\\\"assignments\\\":[{\\\"nazId\\\":\\\"0ad5a1a1-ed10-4b8f-8f38-3ec3730beffc\\\",\\\"nazName\\\":\\\"Прием (осмотр, консультация) врача-хирурга первичный\\\",\\\"serviceName\\\":null,\\\"paid\\\":0}]}\"}]",
+    "processdt": "2026-02-20T12:26:57.760Z",
+    "result": "ok",
+    "errmsg": null
+  },
+  {
+    "id": "f4c4ad14-fc8d-4ab6-9eaf-e2369450599d",
+    "dt": "2026-02-20T12:26:13.526Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"21291c2e-58b2-4c12-a3f8-575538223e40\",\"icd10Code\": \"A00.9\",\"done\": 1,\"doneDate\": \"2026-02-20T15:21:28+03:00\",\"employers\": [{\"empID\": \"e12d8937-5241-4fd7-8a56-244499484f52\",\"roomID\": null,\"deptID\": \"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.539Z",
+    "result": "ok",
+    "errmsg": "Услуга fdec3c45-b287-442b-9612-bf8fe57502e9 полностью оказана"
+  },
+  {
+    "id": "170bf7cc-18db-4c83-9038-4c13feddf311",
+    "dt": "2026-02-20T12:26:13.501Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"49175e5c-82da-4d32-b5eb-732839108711\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-19T08:11:44+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.519Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 49175e5c-82da-4d32-b5eb-732839108711 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "77a9a755-2c76-41d9-8db3-d042db4e96b1",
+    "dt": "2026-02-20T12:26:13.476Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:20:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T11:10:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:00:48.807Z\",\"result\":\"ok\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T12:26:13.495Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "6971dd7a-fc65-40c4-adac-fb7f0da0a923",
+    "dt": "2026-02-20T12:26:13.446Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:10:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T11:06:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:00:48.807Z\",\"result\":\"err\",\"errMsg\":\"Error: column \\\"empfio\\\" of relation \\\"patservicestateemp\\\" does not exist\\n    at PGProvider._sql (/pmu/server/app/services/DataProviders/PG.js:179:23)\\n    at PGProvider.sql (/pmu/server/app/services/DataProviders/CustomFS.js:74:21)\\n    at PGProvider.qb (/pmu/server/app/services/DataProviders/CustomFS.js:112:21)\\n    at CRUDSrv.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:116:32)\\n    at PGProvider.qCreate (/pmu/server/app/services/CRUDAdapter/CRUD.js:173:42)\\n    at PGProvider.jq (/pmu/server/app/services/DataProviders/CustomFS.js:142:34)\\n    at CRUD.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:24:44)\\n    at createEmployee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:81:23)\\n    at createEmployeeFee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:164:19)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T12:26:13.471Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "5a9897a3-7e4d-4e55-8d36-620d2619e433",
+    "dt": "2026-02-20T12:26:13.425Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"ID\":\"7d06b089-9809-4bfc-bfa6-478c0ddf24c8\",\"dt\":\"2026-02-18T11:16:48.628Z\",\"src\":\"kis\",\"queue\":\"emias.naz.state.change\",\"message\":{\"nazID\":\"3abfed6d-19eb-4dfe-a902-cd2a37a991d8\",\"icd10Code\":\"A01.1\",\"done\":1,\"doneDate\":\"2026-02-18T15:00:26+03:00\",\"employers\":[{\"empID\":\"cf8e9ae9-6307-4778-b6ca-b685aa16aaa6\",\"roomID\":null,\"deptID\":\"29141e81-ae9b-49b7-bfb7-99e3a0377770\",\"empFio\":null,\"empPost\":null}],\"brigade\":null,\"signatories\":null,\"comment\":null},\"processDt\":\"2026-02-18T11:16:48.807Z\",\"result\":\"err\",\"errMsg\":\"Error: column \\\"empfio\\\" of relation \\\"patservicestateemp\\\" does not exist\\n    at PGProvider._sql (/pmu/server/app/services/DataProviders/PG.js:179:23)\\n    at PGProvider.sql (/pmu/server/app/services/DataProviders/CustomFS.js:74:21)\\n    at PGProvider.qb (/pmu/server/app/services/DataProviders/CustomFS.js:112:21)\\n    at CRUDSrv.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:116:32)\\n    at PGProvider.qCreate (/pmu/server/app/services/CRUDAdapter/CRUD.js:173:42)\\n    at PGProvider.jq (/pmu/server/app/services/DataProviders/CustomFS.js:142:34)\\n    at CRUD.create (/pmu/server/app/services/CRUDAdapter/CRUD.js:24:44)\\n    at createEmployee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:81:23)\\n    at createEmployeeFee (/pmu/server/solution/ext/kis/forms/srvpool/service/fee/FeeCreateFunctions.js:164:19)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n\",\"Расшифровка IDs\":{}}",
+    "processdt": "2026-02-20T12:26:13.440Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение undefined в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "60ba1e47-04b8-4446-a81a-f945f0b4ce14",
+    "dt": "2026-02-20T12:26:13.404Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"b7b6b93d-75a3-48af-a412-b3a9679482a6\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-18T08:11:57+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.420Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение b7b6b93d-75a3-48af-a412-b3a9679482a6 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "644799c9-b84d-4da0-a2da-0d4a8c7768be",
+    "dt": "2026-02-20T12:26:13.377Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"d538e4b5-13a8-4e62-8d8e-9dc4b4f01c85\",\"icd10Code\": null,\"done\": 1,\"doneDate\": \"2026-02-17T08:13:42+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.398Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение d538e4b5-13a8-4e62-8d8e-9dc4b4f01c85 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "19e91710-c438-4512-a367-9cebd8442b46",
+    "dt": "2026-02-20T12:26:13.357Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"c8dadead-1fd0-44c2-beb6-e23776b657aa\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-10T08:10:05+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.372Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение c8dadead-1fd0-44c2-beb6-e23776b657aa в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "3c02f195-b89b-40c1-9634-d2db5c19392d",
+    "dt": "2026-02-20T12:26:13.338Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"cc19fab3-f511-4e91-b85c-b8602ee69684\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-09T08:12:28+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.352Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение cc19fab3-f511-4e91-b85c-b8602ee69684 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "7f839bb1-41b4-4d9d-9566-e003ea47ffd9",
+    "dt": "2026-02-20T12:26:13.316Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"2684a118-8416-4b65-9f0c-3b8bacb398cc\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-08T08:09:47+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.332Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 2684a118-8416-4b65-9f0c-3b8bacb398cc в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "4dbe4f42-293b-4dfb-a848-b00501606aa3",
+    "dt": "2026-02-20T12:26:13.273Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"2ad862cf-22b7-4078-bb8e-8d74d25a8ce8\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-07T08:11:25+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.310Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 2ad862cf-22b7-4078-bb8e-8d74d25a8ce8 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "ff8f38ff-a758-4ed6-a97f-bf0c7efc1244",
+    "dt": "2026-02-20T12:26:13.246Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"fdcecc8f-92ae-4b15-9ba6-c2ee90b8c3a4\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-06T08:24:33+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.266Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение fdcecc8f-92ae-4b15-9ba6-c2ee90b8c3a4 в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  },
+  {
+    "id": "17deb589-6385-46b3-a1f3-8e5aa8f18953",
+    "dt": "2026-02-20T12:26:13.236Z",
+    "src": "kis",
+    "queue": "emias.naz.state.change",
+    "message": "{\"nazID\": \"5d852c1c-a496-45a2-927a-88419d14f64a\",\"icd10Code\": \"Z01.6\",\"done\": 1,\"doneDate\": \"2026-02-05T08:23:09+03:00\",\"employers\": [{\"empID\": \"d6ffde6f-994d-454a-bfde-d41c6a91cbec\",\"roomID\": null,\"deptID\": \"f0216ff3-b656-4464-8c83-4b4f95984e2e\",\"empFio\": null,\"empPost\": null}],\"brigade\": null,\"signatories\": null,\"comment\": null}",
+    "processdt": "2026-02-20T12:26:13.241Z",
+    "result": "err",
+    "errmsg": "Error: Отсутствует назначение 5d852c1c-a496-45a2-927a-88419d14f64a в таблице kisnaz\n    at KisQueueService.onNazStateChange (/pmu/server/solution/ext/kis/api/KisQueue/index.js:546:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /pmu/server/solution/ext/kis/api/KisQueue/index.js:163:33"
+  }
+]
