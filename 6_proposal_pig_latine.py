@@ -56,6 +56,7 @@ with open('6.txt', 'r') as f:
 print(' '.join(table))
 
 def transpartent_words(matrix_word):
+    """Транспонируеем матрицу слов"""
     matrix_word_new=[]
     for words in matrix_word:
         words=words.split(' ')

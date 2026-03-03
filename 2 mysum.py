@@ -24,7 +24,7 @@ def mysum2(*args):
 print(mysum2([5,4,6],3))
 
 def arth_mean(*args):
-    "Суммирует аргументы"
+    "Ссреднее арифметическое"
     output=0
     space=0
     for arg in args:
