@@ -63,37 +63,41 @@ filename1 = 'passwd.txt'
 result = passwd_to_dict_ver_2(filename1)
 print(result)
 
+def chisla_probel():
+    """Прочитайте текстовый файл, строка за строкой С помо-
+щью словаря подсчитайте, сколько раз каждая гласная (a, e,
+i, o и u) встречается в файле. Распечатайте полученную та-
+блицу."""
+    # Шаг 1: Получаем ввод от пользователя
+    user_input = input("Введите целые числа, разделённые пробелами: ")
 
-# Шаг 1: Получаем ввод от пользователя
-user_input = input("Введите целые числа, разделённые пробелами: ")
+    # Шаг 2: Преобразуем ввод в список целых чисел
+    numbers = list(map(int, user_input.split()))
 
-# Шаг 2: Преобразуем ввод в список целых чисел
-numbers = list(map(int, user_input.split()))
-
-# Проверяем, что ввод не пустой
-if not numbers:
-    print("Вы не ввели ни одного числа.")
-else:
-    # Шаг 3: Определяем диапазон коэффициентов (от 2 до max(numbers))
-    max_num = max(numbers)
-    coefficients = range(2, max_num + 1)
-
-    # Шаг 4–5: Создаём словарь с коэффициентами и списками кратных чисел
-    result_dict = {}
-    for coeff in coefficients:
-        multiples = [num for num in numbers if num % coeff == 0]
-        # Добавляем в словарь только если есть кратные числа
-        if multiples:
-            result_dict[coeff] = multiples
-
-    # Шаг 6: Выводим результат
-    if result_dict:
-        print("\nСловарь коэффициентов и кратных им чисел:")
-        for coeff, multiples in sorted(result_dict.items()):
-            print(f"Коэффициент {coeff}: {multiples}")
+    # Проверяем, что ввод не пустой
+    if not numbers:
+        print("Вы не ввели ни одного числа.")
     else:
-        print("Среди введённых чисел нет кратных ни одному коэффициенту (от 2 до максимального числа).")
-        
+        # Шаг 3: Определяем диапазон коэффициентов (от 2 до max(numbers))
+        max_num = max(numbers)
+        coefficients = range(2, max_num + 1)
+
+        # Шаг 4–5: Создаём словарь с коэффициентами и списками кратных чисел
+        result_dict = {}
+        for coeff in coefficients:
+            multiples = [num for num in numbers if num % coeff == 0]
+            # Добавляем в словарь только если есть кратные числа
+            if multiples:
+                result_dict[coeff] = multiples
+
+        # Шаг 6: Выводим результат
+        if result_dict:
+            print("\nСловарь коэффициентов и кратных им чисел:")
+            for coeff, multiples in sorted(result_dict.items()):
+                print(f"Коэффициент {coeff}: {multiples}")
+        else:
+            print("Среди введённых чисел нет кратных ни одному коэффициенту (от 2 до максимального числа).")
+            
         
         
 def passwd_to_dict(filename):

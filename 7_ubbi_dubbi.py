@@ -11,7 +11,10 @@ def ubbi_dubbi(word):
 ubbi_dubbi('word')
 
 def ubbi_dubbi_ver_2(word):
-    """Убби-Дубби"""
+    """Работа словами, написанными с заглавной буквы. Если слово
+написано с заглавной буквы (т.е. первая буква заглавная,
+а остальная часть слова — нет), то перевод на Убби-Дубби
+должен быть написан с такой же заглавной буквы."""
     
     symbols='aeiou' 
     output=[]  
@@ -27,8 +30,11 @@ def ubbi_dubbi_ver_2(word):
 ubbi_dubbi_ver_2('wofgihfsehd')   
 
         
-def ubbi_dubbi_ver_2(word):
-    """Убби-Дубби""" 
+def ubbi_dubbi_ver_3(word):
+    """Работа словами, написанными с заглавной буквы. Если слово
+написано с заглавной буквы (т.е. первая буква заглавная,
+а остальная часть слова — нет), то перевод на Убби-Дубби
+должен быть написан с такой же заглавной буквы."""
     first_letter=word[0]
     word=word.lower()
     symbols='aeiou' 
@@ -44,12 +50,16 @@ def ubbi_dubbi_ver_2(word):
     print(word)
     return word
 
-ubbi_dubbi_ver_2('Awofgihfsehd') 
-ubbi_dubbi_ver_2('ewofgihfsehd') 
+ubbi_dubbi_ver_3('Awofgihfsehd') 
+ubbi_dubbi_ver_3('ewofgihfsehd') 
 
 
 def delete_authors(string_authors: str):
-    """Удаление авторов""" 
+    """Удаление имен авторов. В научных кругах принято удалять
+имена авторов из статьи, представленной на рецензирова-
+ние. Получив строку со статьей и отдельный список строк
+с именами авторов, замените все имена в статье симво-
+лами _""" 
     string_authors=string_authors.split('-')
     filetext_new=[]
     alpabet='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -95,6 +105,12 @@ def write_to_file(filename, data_list):
 #write_to_file('8.txt', data_list)
             
 def del_authors(line):
+    """Удаление имен авторов. В научных кругах принято удалять
+имена авторов из статьи, представленной на рецензирова-
+ние. Получив строку со статьей и отдельный список строк
+с именами авторов, замените все имена в статье симво-
+лами _
+    """
     alpabet='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_line=[]
     for symbol in line:
@@ -106,7 +122,11 @@ def del_authors(line):
     return new_line       
 
 def delete_authors_ver_2(string_authors: str,filename: str):
-    """Удаление авторов""" 
+    """Удаление имен авторов. В научных кругах принято удалять
+имена авторов из статьи, представленной на рецензирова-
+ние. Получив строку со статьей и отдельный список строк
+с именами авторов, замените все имена в статье симво-
+лами _""" 
     file_text=file_open(filename)
     print(file_text)
     filetext_new=[]
@@ -123,7 +143,11 @@ def delete_authors_ver_2(string_authors: str,filename: str):
         number+=1
     write_to_file('8.txt', filetext_new)
 def string_authors_edit(string_authors):
-    """Превращает строку '1-3' или '1,3' в список индексов [0, 1, 2] или [0, 2]"""
+    """Удаление имен авторов. В научных кругах принято удалять
+имена авторов из статьи, представленной на рецензирова-
+ние. Получив строку со статьей и отдельный список строк
+с именами авторов, замените все имена в статье симво-
+лами _""" 
     string_authors_final = [] # Инициализируем список
     
     if '-' in string_authors:
@@ -142,7 +166,11 @@ def string_authors_edit(string_authors):
         
     return string_authors_final
 def delete_authors_ver_3(string_authors: str,filename: str):
-    """Удаление авторов""" 
+    """Удаление имен авторов. В научных кругах принято удалять
+имена авторов из статьи, представленной на рецензирова-
+ние. Получив строку со статьей и отдельный список строк
+с именами авторов, замените все имена в статье симво-
+лами _""" 
     file_text=file_open(filename)
     print(file_text)
     filetext_new=[]

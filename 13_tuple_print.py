@@ -1,7 +1,11 @@
 import operator
 PEOPLE = [('Donald', 'Trump', 7.85),('Vladimir', 'Putin', 3.626),('Jinping', 'Xi', 10.603)]
 def format_sort_records(list_of_tuples):
-    
+    """функцию Python, format_
+sort_records, принимающую на вход список PEOPLE и воз-
+вращающую отформатированную строку, которая выглядит сле-
+дующим образом:
+    """
     output=[]
     template="{1:10}{0:10}{2:5.2f}" #форматировани
     for person in sorted(list_of_tuples, key=operator.itemgetter(1,0)):
@@ -13,7 +17,14 @@ def format_sort_records(list_of_tuples):
 print('\n'.join(format_sort_records(PEOPLE)))
 import collections
 PEOPLE = [('Donald', 'Trump', 7.85),('Vladimir', 'Putin', 3.626),('Jinping', 'Xi', 10.603)]
-def format_sort_records(list_of_tuples):
+def format_sort_records_v2(list_of_tuples):
+    """Если кортежи раздражают вас тем, что в них используются
+числовые индексы, вы не одиноки! Реализуйте это упражне-
+ние, используя объекты namedtuple, определенные в мо-
+дуле collections. Многим нравится использовать имено-
+ванные кортежи, потому что они обеспечивают правильный
+баланс между читабельностью и эффективностью.
+    """
     Person = collections.namedtuple('Person', 'first_name last_name time')
     people = [Person(*t) for t in list_of_tuples]
     sorted_people = sorted(people, key=lambda p: (p.last_name, p.first_name))
@@ -26,7 +37,7 @@ def format_sort_records(list_of_tuples):
     return '\n'.join(result_lines)
 
 # Использование
-output = format_sort_records(PEOPLE)
+output = format_sort_records_v2(PEOPLE)
 print(output)
 
 OSCAR_NOMINATIONS_2024 = [
@@ -41,8 +52,16 @@ OSCAR_NOMINATIONS_2024 = [
     ("Прошлым летом", 116, "Мишель Франко"),
     ("Американское чтиво", 111, "Корд Джефферсон")
 ]
-'''
+
 def format_sort_films(list_of_tuples):
+    """Определите список кортежей, в котором каждый кортеж
+содержит название, продолжительность (в минутах) и ре-
+жиссера фильмов, номинированных на премию «Оскар»
+за лучшую картину в прошлом году. Спросите пользова-
+теля, хочет ли он отсортировать список по названию, длине
+или имени режиссера, а затем представьте список, отсорти-
+рованный по выбранному пользователем параметру.
+    """
     Films = collections.namedtuple('Films', 'name time director')
     film = [Films(*t) for t in list_of_tuples]
     sort_type=1
@@ -68,8 +87,14 @@ def format_sort_films(list_of_tuples):
     return '\n'.join(result_lines_films)
 output = format_sort_films(OSCAR_NOMINATIONS_2024)
 print(output)
-'''
+
 def format_sort_films_new(list_of_tuples):
+    """пользователm может сорти-
+ровать не по одному, а по двум или трем из этих полей.
+Пользователь может указать поля, введя их через запятую.
+Вы можете использовать str.split, чтобы превратить их
+в список.
+    """
     Films = collections.namedtuple('Films', 'name time director')
     film = [Films(*t) for t in list_of_tuples]
     sort_types = ['name', 'time', 'director']

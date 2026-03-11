@@ -1,5 +1,5 @@
-def pig_latine_ver2 (word):
-    """Пиг-Латин"""
+def pig_latine_ver3 (word):
+    """Пиг-Латин """
     #word = input('Введите слово: ')
     symbols='aiou'
     symbols_new=['a','i','o','u']
@@ -28,35 +28,47 @@ def pig_latine_ver2 (word):
 
 def pl_sentence(sentence):
     print(sentence)
-    """Пиг-Латин"""
+    """Напишите функцию pl_
+sentence, которая принимает строку, содержащую несколько
+слов, разделенных пробелами."""
     #word = input('Введите слово: ')
     sentence_split=sentence.split(' ')
     sentence_new=[]
     for word in sentence_split:
-        word=pig_latine_ver2(word)
+        word=pig_latine_ver3(word)
         sentence_new.append(word)
     sentence=' '.join(sentence_new)
     print(sentence)
 
 #pl_sentence("Crane was traveling from the United States to Cuba as a newspaper reporter. One night, his ship hit a sandbar. It sank in the Atlantic Ocean, off the coast of Florida. Most of the people on board got into lifeboats. Crane was among the last to leave. There were three others with him: the ship’s captain, the cook, and a sailor.")
-import os
-words=[]
-table=[]
-with open('6.txt', 'r') as f:
-    number=0
-    for line in f:       
-        words=line.split()
-        if len(words)> number:
+def pl_sentence_v2(sentence):
+    """Возьмите текстовый файл, создайте (и распечатайте) бес-
+    смысленное предложение из n-го слова в каждой из пер-
+    вых 10 строк, где n — номер строки."""
+    import os
+    words=[]
+    table=[]
+    with open('6.txt', 'r') as f:
+        number=0
+        for line in f:       
+            words=line.split()
+            if len(words)> number:
+                table.append(words[number])
+                number+=1
+            else:
+                break       
             table.append(words[number])
             number+=1
-        else:
-            break       
-        table.append(words[number])
-        number+=1
-print(' '.join(table))
+    print(' '.join(table))
 
 def transpartent_words(matrix_word):
-    """Транспонируеем матрицу слов"""
+    """Напишите функцию, которая транспонирует список строк,
+в котором каждая строка содержит несколько слов, разде-
+ленных пробелами. В частности, она должна работать та-
+ким образом, что, если вы передаете функции список,
+например, [‘abc def ghi’, ‘jkl mno pqr’, ‘stu
+vwx yz’], она возвращает [‘abc jkl stu’, ‘def mno
+vwx’, ‘ghi pqr yz’]."""
     matrix_word_new=[]
     for words in matrix_word:
         words=words.split(' ')
@@ -74,6 +86,10 @@ matrix_word=['abc def ghi','jkl mno pqr','stu vwx yz']
 #transpartent_words(matrix_word)
 
 def apache_log(error_number):
+    """Прочитайте лог-файл Apache. Если там есть ошибка 404 —
+вы можете просто поискать ‘ 404 ‘, если вы хотите отоб-
+разить IP-адрес, который должен быть первым элементом.
+    """
     import os
     with open('apache.log', 'r') as f:
         for line in f:    

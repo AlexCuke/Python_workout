@@ -1,9 +1,13 @@
 import random
 def hello():
+    """Функция приветствия
+    """
     name=input("Введите Ваше Имя ")
     print(f"Добро пожаловать, {name}!")
 
 def number_sistems(sis,number):
+    """
+    """
     if sis==0:
         number=int(number*2/10)
     elif sis==1:
@@ -12,6 +16,8 @@ def number_sistems(sis,number):
         number=int(number*16/10)
     return number  
 def quessing_hame():
+    """Игра в вопросы
+    """
     number_challange=3
     coorect_number=random.randint(0,100)
     sis=random.randint(0,2)

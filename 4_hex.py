@@ -1,4 +1,6 @@
-def hex_output ():
+def hex_output():
+    """Шестнадцатеричное в десятичное
+    """
     decnum = 0
     hexnum = input('Введите шестнадцатеричное число для преобразования:')
     for power, digit in enumerate (reversed(hexnum)):
@@ -7,6 +9,8 @@ def hex_output ():
     print (decnum)
 #hex_output()
 def manual_hex_to_dec(hex_string):
+    """Шестьнадцатеричное в десятичное вариант
+    """
     decimal_value = 0
     # Убираем префикс 0x, если он есть, и переводим в верхний регистр
     hex_string = hex_string.lower().replace("0x", "")
@@ -33,8 +37,9 @@ print(manual_hex_to_dec("1A"))   # 26 (1*16 + 10)
 print(manual_hex_to_dec("FF"))   # 255 (15*16 + 15)
 print(manual_hex_to_dec("0xabc")) # 2748
 
-def triangle_name ():
-    """Треугольник имени"""
+def triangle_name():
+    """Треугольник имени
+    """
     name = input('Введите имя: ')
     new_name=''
     for power, digit in enumerate (name):

@@ -1,62 +1,11 @@
-'''import operator
-MENU = {
-    "Брускетта с томатами и базиликом": 350,
-    "Тартар из лосося": 680,
-    "Сырная тарелка с мёдом": 520,
-    "Цезарь с курицей": 420,
-    "Греческий салат": 380,
-    "Салат с рукколой и пармской ветчиной": 490,
-    "Луковый суп с гренками": 290,
-    "Борщ с говядиной и сметаной": 320,
-    "Тыквенный крем‑суп": 280,
-    "Стейк Рибай с картофелем": 1200,
-    "Лосось на гриле с овощами": 890,
-    "Паста Карбонара": 550,
-    "Тирамису": 360,
-    "Шоколадный фондан": 390,
-    "Чизкейк Нью‑Йорк": 370,
-    "Американо": 180,
-    "Латте": 220,
-    "Морс клюквенный": 150,
-    "Лимонад малиновый": 250
-}
-def restoraunt(menu):
-    for dish in menu:
-        print(f"{dish:30}: {menu[dish]:4} руб.")
-    zakaz=0
-    while True: 
-        dish = input("Введите названпие блюда: ")
-        if not dish:
-            print(f"Общая сумма заказа: {zakaz} руб.")
-            break
-        else:
-            if dish in menu.keys():
-                zakaz=zakaz+menu[dish]
-                print(f"Цена на {dish}: {menu[dish]} руб. Общая сумма заказа: {zakaz} руб.")
-            elif dish not in menu.keys():
-                print("Такого блюда нет в меню")
-restoraunt(MENU)'''
 
-'''USERS = {
-    "ivan": "qwerty123",
-    "maria": "password456",
-    "alex": "mypass789",
-    "olga": "secure000"
-}
-
-def descript(users):
-    zakaz=0
-    while True: 
-        userpass = input("Введите имя пользователя и пароль через запятую ")
-        userpass=userpass.split(",")
-        if userpass[0] in users.keys() and users[userpass[0]]==userpass[1]:
-            return "Доступ разрешен"
-        else:
-            return "Доступ запрещен"
-print(descript(USERS))
-'''
-'''
 def get_rainfall():
+    """функцию get_rainfall, которая от-
+слеживает количество дождевых осадков в ряде городов. Поль-
+зователи вашей программы будут вводить название города, если
+название города пустое, то функция распечатает отчет (который
+я опишу) перед выходом.
+    """
     weather_data={}
     city=''
     while True: 
@@ -72,10 +21,13 @@ def get_rainfall():
     for town in weather_data:
         print(f"{town:10}: {weather_data[town]:4} мм.")
 get_rainfall()
-'''
 
-'''
-def get_rainfall():
+def get_rainfall_v2():
+    """Вместо того чтобы печатать только общее количество осад-
+ков для каждого города, напечатайте общее количество
+осадков и среднее количество осадков за определенные
+дни.
+    """
     weather_data={}
     all_rain=[]
     while True: 
@@ -93,12 +45,13 @@ def get_rainfall():
     for town in weather_data:
         weather_data[town]=sum(weather_data[town])/len(weather_data[town])
         print(f"{town:10}: {weather_data[town]:4.1f} мм.")
-get_rainfall()
-'''
+get_rainfall_v2()
 
-'''
-def apache_log():
-    """Читает код апача
+def apache_log_v2():
+    """Откройте файл журнала из системы Unix/Linux, напри-
+мер, из сервера Apache. Для каждого кода ответа (т.е.трехзначного кода, указывающего на успех или неудачу
+HTTP-запроса) сохраните список IP-адресов, которые вы-
+дали этот код.
     """
     import os
     apache_tuple={}
@@ -115,12 +68,15 @@ def apache_log():
         for cod in apache_tuple:
             all_ip=str(apache_tuple[cod])
             print(f"Код ответа: {cod:4}, ip-address: {''.join(all_ip)[1:-1]}")
-apache_log()
-'''
+apache_log_v2()
 
-'''
-def apache_log():
-    """Читает код апача
+
+
+def apache_log_v3():
+    """Откройте файл журнала из системы Unix/Linux, напри-
+мер, из сервера Apache. Для каждого кода ответа (т.е.трехзначного кода, указывающего на успех или неудачу
+HTTP-запроса) сохраните список IP-адресов, которые вы-
+дали этот код.
     """
     import os
     apache_tuple={}
@@ -137,10 +93,10 @@ def apache_log():
         for cod in apache_tuple:
             all_ip=str(apache_tuple[cod])
             print(f"Код ответа: {cod:4}, ip-address: {''.join(all_ip)[1:-1]}")
-apache_log()
-'''
+apache_log_v3()
+
 def file_open_str(filename):
-    """Открытие файла построчно"""
+    """ЧОткрытие файла и очистка его содержимого."""
     import re
     with open(filename, 'r',  encoding='windows-1251') as f:
         # readlines() читает все строки и возвращает их списком
@@ -157,7 +113,11 @@ def file_open_str(filename):
 
        
 def words_in_text(filename):
-    """Количество слов каждого типа в файле""" 
+    """Количество слов каждого типа в файле. Чтение через текстовый файл на диске. Используйте сло-
+варь для отслеживания количества слов каждой длины
+в файле — то есть, сколько трехбуквенных слов, четырех-
+буквенных слов, пятибуквенных слов и так далее. Отобра-
+зите результаты.""" 
     import operator
     content=file_open_str(filename)
     words={}
@@ -198,5 +158,5 @@ def words_in_text(filename):
         big_word_set=sorted(big_word_set)
         finish_word=str(big_word_set)
         print(f"Слова с количеством букв: {len_word:2} - {finish_word:3}.")
-BOOKNAME='Толстой Лев. Война и мир. Книга 1.txt'
+BOOKNAME='Толстой Лев. Война и мир.txt'
 words_in_text(BOOKNAME)

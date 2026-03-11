@@ -10,15 +10,23 @@ PEOPLE = [{'first':'Reuven', 'last':'Lerner','email':'reuven@lerner.co.il'},
 
 WORDS=['this','is','elementary','test','example']
 def most_repeating_letter_count(word):
-        return Counter(word).most_common(1)[0][1]
+    """Функция должна возвращать строку, содержащую наибольшее количество повторяющихся букв
+    """
+    return Counter(word).most_common(1)[0][1]
 
 def most_repeating_word(words):
+    """Функция должна возвращать строку, содержащую наибольшее количество повторяющихся слов
+    """
     return max(words,key=most_repeating_letter_count)
 
 result = most_repeating_word(WORDS)
 print(result)
 
 def most_repeating_vowel_count(word):
+    """Вместо того, чтобы искать слово с наибольшим количе-
+ством повторяющихся букв, найдите слово с наибольшим
+количеством повторяющихся гласных. Поиск в слове
+    """
     # Определяем множество гласных (английских), включая заглавные и строчные
     vowels = set('aeiouAEIOU')
     # Оставляем только гласные из слова
@@ -29,17 +37,36 @@ def most_repeating_vowel_count(word):
     # Считаем частоту каждой гласной и возвращаем максимальную
     return Counter(vowel_letters).most_common(1)[0][1]
 
-def most_repeating_vowel_word(words):
-    # Находим слово с максимальным количеством повторяющихся гласных
+def most_repeating_vowel_word_v2(words):
+    """Вместо того, чтобы искать слово с наибольшим количе-
+ством повторяющихся букв, найдите слово с наибольшим
+количеством повторяющихся гласных.
+    """
+    
     return max(words, key=most_repeating_vowel_count)
 
 # Пример использования
 WORDS = ['beautiful', 'queue', 'strength', 'aardvark', 'rhythm']
-result = most_repeating_vowel_word(WORDS)
+result = most_repeating_vowel_word_v2(WORDS)
 print(result)  # Вывод: 'queue' (в этом слове буква 'u' повторяется 3 раза)
 from collections import Counter
 
 def analyze_passwd():
+    """Напишите программу для чтения /etc/passwd на компью-
+тере Unix. Первое поле содержит имя пользователя, а по-
+следнее — оболочку пользователя, командный интерпрета-
+тор. Выведите оболочки в порядке убывания популярности
+Какая буква встречается
+чаще всего и сколько раз?
+Counter.most_common возвращает список двухэлемент-
+ных кортежей (value и count) в порядке убывания.
+Точно так же, как вы можете передать ключ
+в sorted, вы можете передать его в max и ис-
+пользовать другой метод сортировки.
+96 Лернер Реувен. Python-интенсив: 50 быстрых упражнений
+так, чтобы самая популярная оболочка была показана пер-
+вой, вторая по популярности — второй, и так далее
+    """
     # Словарь для группировки пользователей по оболочкам
     shell_to_users = {}
 
@@ -90,3 +117,9 @@ def analyze_passwd():
 
 # Запуск анализа
 analyze_passwd()
+
+def analyze_passwd_v2():
+    """НЕ ГОТОВО Для дополнительной сложности после отображения каж-
+    дой оболочки также покажите имена пользователей (от-
+    сортированные по алфавиту), которые используют каждую
+    из этих оболочек"""

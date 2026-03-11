@@ -1,6 +1,7 @@
 
 def mysum(*args):
-    "Суммирует аргументы"
+    """Суммирует аргументы
+    """
     output=0
     print(type(args))
     for arg in args:
@@ -11,7 +12,8 @@ def mysum(*args):
 print(mysum(5,4,6))
 
 def mysum2(*args):
-    "Суммирует аргументы c вложенными кортежами"
+    """Суммирует аргументы c вложенными кортежами
+    """
     output=0
     for arg in args:
         if isinstance(arg, (list, tuple)):
@@ -24,7 +26,8 @@ def mysum2(*args):
 print(mysum2([5,4,6],3))
 
 def arth_mean(*args):
-    "Ссреднее арифметическое"
+    """Среднее арифметическое
+    """
     output=0
     space=0
     for arg in args:
