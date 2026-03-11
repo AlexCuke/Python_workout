@@ -1,0 +1,71 @@
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:105:Message Bus Daemon:/nonexistent:/usr/sbin/nologin
+syslog:x:104:106::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+avahi:x:107:111:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:108:112:user for cups-pk-helper:/home/cups-pk-helper:/usr/sbin/nologin
+dnsmasq:x:109:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:111:113::/var/lib/landscape:/usr/sbin/nologin
+polkitd:x:112:114:PolicyKit daemon:/nonexistent:/usr/sbin/nologin
+pulse:x:113:118:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+rtkit:x:114:121:RealtimeKit:/proc:/usr/sbin/nologin
+saned:x:115:122::/var/lib/saned:/usr/sbin/nologin
+colord:x:116:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:117:124:Geoclue geolocation service,,,:/var/lib/geoclue:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+kernoops:x:119:65534:Kernel Oops Tracking Daemon:/:/usr/sbin/nologin
+whoopsie:x:120:125::/nonexistent:/usr/sbin/nologin
+speech-dispatcher:x:121:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+snmp:x:122:126::/var/lib/snmp:/usr/sbin/nologin
+mosquitto:x:123:127:Mosquitto MQTT v3.1/v3.1.1 broker:/var/lib/mosquitto:/usr/sbin/nologin
+usbmux:x:124:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+redmine:x:1000:1000:Redmine user:/opt/redmine:/bin/bash
+alice:x:1001:1001:Alice Johnson:/home/alice:/bin/bash
+bob:x:1002:1002:Bob Smith:/home/bob:/bin/zsh
+charlie:x:1003:1003:Charlie Brown:/home/charlie:/bin/bash
+diana:x:1004:1004:Diana Prince:/home/diana:/bin/fish
+eve:x:1005:1005:Eve Adams:/home/eve:/bin/bash
+frank:x:1006:1006:Frank Miller:/home/frank:/bin/bash
+grace:x:1007:1007:Grace Lee:/home/grace:/bin/zsh
+henry:x:1008:1008:Henry Wilson:/home/henry:/bin/bash
+irene:x:1009:1009:Irene Clark:/home/irene:/bin/bash
+john:x:1010:1010:John Doe:/home/john:/bin/bash
+karen:x:1011:1011:Karen White:/home/karen:/bin/bash
+luke:x:1012:1012:Luke Skywalker:/home/luke:/bin/zsh
+mary:x:1013:1013:Mary Jane:/home/mary:/bin/bash
+nathan:x:1014:1014:Nathan Drake:/home/nathan:/bin/bash
+olivia:x:1015:1015:Olivia Parker:/home/olivia:/bin/fish
+peter:x:1016:1016:Peter Parker:/home/peter:/bin/bash
+quinn:x:1017:1017:Quinn Mallory:/home/quinn:/bin/bash
+#rachel:x:1018:1018:Rachel Green:/home/rachel:/bin/zsh
+sam:x:1019:1019:Sam Winchester:/home/sam:/bin/bash
+tara:x:1020:1020:Tara Reid:/home/tara:/bin/bash
+ursula:x:1021:1021:Ursula Andress:/home/ursula:/bin/bash
+victor:x:1022:1022:Victor Hugo:/home/victor:/bin/zsh
+wendy:x:1023:1023:Wendy Williams:/home/wendy:/bin/bash
+xavier:x:1024:1024:Xavier Woods:/home/xavier:/bin/bash
+yvonne:x:1025:1025:Yvonne Strahovski:/home/yvonne:/bin/fish
+zach:x:1026:1026:Zachary Taylor:/home/zach:/bin/bash
+devops:x:1027:1027:DevOps Engineer:/home/devops:/bin/bash
