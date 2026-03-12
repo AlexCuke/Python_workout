@@ -67,6 +67,12 @@ def transpon(filename_input):
     output = [list(row) for row in zip(*filename_input)]
     return output
 
+def open_json(filename_input):
+    """Открывает файл JSON """
+    with open(filename_input, 'r', encoding='utf-8') as input:
+        output=json.load(input)
+    return output
+
 def print_ditc(input_dict):
     """Красивая печать словаря"""
     for keys,values in input_dict.items():
