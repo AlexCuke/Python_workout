@@ -1,17 +1,22 @@
 def file_open(filename):
-    """Открытие файла построчно"""
+    """Открытие файла построчно
+    """
     with open(filename, 'r', encoding='utf-8') as f:
         # readlines() читает все строки и возвращает их списком
         content = f.readlines() 
-        return content    
+        return content   
+     
 def file_open_one(filename):
-    """Открытие файла построчно"""
+    """Открытие файла построчно
+    """
     with open(filename, 'r', encoding='utf-8') as f:
         # readlines() читает все строки и возвращает их списком
         content=f.read()
         return content     
     
 def write_to_file(filename, data_list):
+    """Запись в файл
+    """
     # 'w' - перезапишет файл, 'a' - добавит в конец
     with open(filename, 'w', encoding='utf-8') as f:
         f.writelines(data_list) 

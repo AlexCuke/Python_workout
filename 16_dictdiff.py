@@ -60,23 +60,18 @@ def dict_new_two(*args):
 result=dict_new_two('a',3,'b',7,'c',8)
 print(result)
 
-def dict_partition(d,f):
+def dict_partition(a,f):
     """Разделяет словарь на два в соответствии с результатом функции f.
-
-    Args:
-        d (dict): исходный словарь с парами ключ-значение.
+    Args: d (dict): исходный словарь с парами ключ-значение.
         f (function): функция-предикат, принимающая ключ и значение
             и возвращающая True или False.
-
-    Returns:
-        tuple: кортеж из двух словарей:
+    Returns: tuple: кортеж из двух словарей:
             - первый словарь: пары, для которых f(key, value) == True;
             - второй словарь: пары, для которых f(key, value) == False.
     """
     true_dict = {}
     false_dict = {}
-
-    for key, value in d.items():
+    for key, value in a.items():
         if f(key, value):
             true_dict[key] = value
         else:

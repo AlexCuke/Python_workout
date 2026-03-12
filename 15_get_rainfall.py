@@ -96,7 +96,7 @@ HTTP-запроса) сохраните список IP-адресов, кото
 apache_log_v3()
 
 def file_open_str(filename):
-    """ЧОткрытие файла и очистка его содержимого."""
+    """Открытие файла и очистка его содержимого."""
     import re
     with open(filename, 'r',  encoding='windows-1251') as f:
         # readlines() читает все строки и возвращает их списком
