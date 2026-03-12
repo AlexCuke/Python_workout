@@ -1,4 +1,4 @@
-'''def funk_find():
+'''def funk_find_v1():
     """Используйте os.listdir, чтобы получить имена файлов
     в текущем каталоге. Какие расширения файлов (т.е. суф-
     фиксы, следующие за конечным символом «.») находятся
@@ -46,10 +46,31 @@
                         
                          
 
-funk_find()
+funk_find_v1()
         '''
         
-def funk_find():
+def dict_for_str_file(content):
+    """Словарь в строку    
+    """
+    output_lines = []
+    for key, value in content.items():
+        if isinstance(value, list):
+            if value:  # проверяем, что список не пустой
+                line = f"{key}: {value[0]} {value[-1]}"
+            else:
+                line = f"{key}: (пустой список)"
+        else:
+            line = f"{key}: {value}"
+        output_lines.append(line)
+    return '\n'.join(output_lines) + '\n'
+def file_open_write(filename,content):
+    import json
+    """Запись словаря в файл построчно"""
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(content, f, ensure_ascii=False, indent=4)
+        return True
+     
+def funk_find_v2():
     """Вывожу список всех функций в файлах
         """
     import os
@@ -76,10 +97,13 @@ def funk_find():
                             func_name=line_clean[1].split(' ')[1]
                             func_tuple.append(func_name+filename)
                             newline=lines[i+1:]
-                            for comment_line in newline:
-                                
+                            for comment_line in newline:                    
                                 comment=comment+comment_line
-                                if '"""' in comment_line:
+                                if comment_line.count('"""') > 1:
+                                    comment=comment.split('"""')
+                                    comment=func_inc.append(comment[1])   
+                                    break
+                                elif comment_line!=lines[i+1] and '"""' in comment_line:
                                     comment=comment.split('"""')
                                     comment=func_inc.append(comment[1])   
                                     break
@@ -92,14 +116,15 @@ def funk_find():
     #for keys,values in table_of_contents.items():
     #    print(f'Название файла:{keys} Название функции:{values}')              
     for keys,values in table_of_func.items():
-        print(f'Функция: {keys} : {values}')    
+        print(f'Функция: {keys} : {values}')  
     print(len(table_of_func))  
     func_tuple.sort()
-    #print(func_tuple)               
+    print(func_tuple)               
     #print(table_of_contents)
-
+    output=dict_for_str_file(table_of_func)
+    file_open_write('file_find.txt',output)
                         
                          
 
-funk_find()
+funk_find_v2()
         

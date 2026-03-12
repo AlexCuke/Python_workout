@@ -60,9 +60,8 @@ def dict_new_two(*args):
 result=dict_new_two('a',3,'b',7,'c',8)
 print(result)
 
-def dict_partition(d, f):
-    """
-    Разделяет словарь на два в соответствии с результатом функции f.
+def dict_partition(d,f):
+    """Разделяет словарь на два в соответствии с результатом функции f.
 
     Args:
         d (dict): исходный словарь с парами ключ-значение.

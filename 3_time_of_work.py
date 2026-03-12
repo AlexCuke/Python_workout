@@ -1,7 +1,8 @@
 from decimal import *
 
 def run_timing():    
-    "Определение среднего временниго интервала"
+    """Определение среднего временниго интервала
+    """
     numbers_of_runs=0
     total_run=0
     while True:
