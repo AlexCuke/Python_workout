@@ -1,7 +1,7 @@
 from decimal import *
 
 def run_timing():    
-    "Определение среднего временниго интервала"
+    """Определение среднего временниго интервала"""
     numbers_of_runs=0
     total_run=0
     while True:
@@ -22,9 +22,7 @@ def run_timing():
 #run_timing()
 
 def float_share(float_number : float, before:int ,after:int ):
-    """
-    Функция для разделения числа и склеивания
-    """
+    """Функция для разделения числа и склеивания"""
     try:    
         s_num = "{:.10f}".format(float_number).rstrip('0').rstrip('.')
         

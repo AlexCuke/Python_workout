@@ -18,8 +18,7 @@ def file_open_str(filename):
 import os       
 
 def find_longest_word(filename):
-    """функции. find_longest_
-word принимает в качестве аргумента имя файла и возвращает
+    """функции. find_longest_word принимает в качестве аргумента имя файла и возвращает
 самое длинное слово, найденное в файл""" 
     import operator
     content=file_open_str(filename)
@@ -35,8 +34,7 @@ BOOKNAME='Толстой Лев. Война и мир.txt'
 print(f'Самое длинное сллово - {find_longest_word(BOOKNAME)}')
 
 def find_all_longest_words(dirname):
-    """функция, fi nd_
-all_longest_words, принимает имя каталога и возвращает
+    """функция, find_all_longest_words, принимает имя каталога и возвращает
 словарь, в котором ключами являются имена файлов, а значени-
 ями — самые длинные слова из каждого файла."""
     return {filename: find_longest_word(os.path.join(dirname, filename))
