@@ -49,28 +49,7 @@ def funk_find_v1():
 #funk_find_v1()
 
         
-def dict_for_str_file(content):
-    """Словарь в строку    
-    """
-    output_lines = []
-    for key, value in content.items():
-        if isinstance(value, list):
-            if value:  # проверяем, что список не пустой
-                line = f"{key}: {value[0]} {value[-1]}"
-            else:
-                line = f"{key}: (пустой список)"
-        else:
-            line = f"{key}: {value}"
-        output_lines.append(line)
-    return '\n'.join(output_lines) + '\n'
-def file_open_write(filename,content):
-    import json
-    """Запись словаря в файл построчно"""
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(content, f, ensure_ascii=False, indent=4)
-        return True
-     
-def funk_find_v2():
+def funk_find():
     """Вывожу список всех функций в файлах
         """
     import os
@@ -161,52 +140,7 @@ def funk_find_file(filename):
     func_tuple.sort()
     #print(func_tuple)               
     #print(table_of_contents)
-                    
-                    
-#funk_find()
-def clean_cont(content,clean_1,clean_2,number):
-    """Очистка контета от лишнего два раза"""
-    content=content.split(clean_1)[number] 
-    output=content.split(clean_2)[number] 
-    return output
-        
 
-def funk_find_file(filename):
-    """Вывожу список всех функций в одном файле
-        """
-    table_of_func={}
-    with open(filename, 'r', encoding='utf-8') as file:
-        content=file.read()     #Читаем файл полностью
-        lines=content.split('\n') #Читаем файл на строки
-        for i,line in enumerate(lines):
-            if 'def' in line and '"""' in lines[i+1]:
-                func_name=''            #Имя функции
-                func_inc=[filename]     #Имя файла
-                func_name=clean_cont(line,'def',' ',1)  #очистка от лишнего
-                newline=lines[i+2:]     #Новые строки
-                comment=lines[i+1]      #комментарий = строке где """
-                if lines[i+1].count('"""')<2:   
-                    for comment_line in newline:     
-                        comment=comment+comment_line
-                        if '"""' in comment_line:
-                            comment=comment.split('"""')
-                            func_inc.append(comment[1])       
-                            break    
-                else:
-                    comment=comment.split('"""')
-                    func_inc.append(comment[1])
-                #print(func_inc)                                
-                table_of_func.setdefault(func_name,func_inc)
-    return table_of_func
-    '''sorted_table_of_func = dict(sorted(table_of_func.items()))            
-    for keys,values in sorted_table_of_func.items():
-        print(f'Функция: {keys} : {values}')    
-    print(len(table_of_func))'''  
-    func_tuple.sort()
-    print(func_tuple)               
-    #print(table_of_contents)
-    output=dict_for_str_file(table_of_func)
-    file_open_write('file_find.txt',output)
                         
                          
 
