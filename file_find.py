@@ -1,3 +1,6 @@
+import open_close
+import json
+
 def funk_find_v1():
     """Используйте os.listdir, чтобы получить имена файлов
     в текущем каталоге. Какие расширения файлов (т.е. суф-
@@ -148,7 +151,12 @@ def funk_find_file(filename):
 #asи=funk_find_file('16_dictdiff.py')
 #print(asd)
     
-    
+def wright_to_json(input,json_filename_output):
+    """Пишет данные словаря в json"""
+
+    with open(json_filename_output, 'w', encoding='utf-8') as output_file:
+        json.dump(input, output_file, ensure_ascii=False, indent=4)
+    return True         
 
         
 def funk_find_refact():
@@ -167,8 +175,8 @@ def funk_find_refact():
         print(f'Функция: {keys} : {values}')
         print('')    
     print(len(table_of_func_big))  
-
-
+    open_close.write_to_file_data_string('file_t.txt',sorted_table_of_func.items())
+    wright_to_json(sorted_table_of_func,'file_j.json')
                         
                          
 

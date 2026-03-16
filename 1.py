@@ -5,8 +5,7 @@ def hello():
     print(f"Добро пожаловать, {name}!")
 
 def number_sistems(sis,number):
-    """
-    """
+    """Номер"""
     if sis==0:
         number=int(number*2/10)
     elif sis==1:

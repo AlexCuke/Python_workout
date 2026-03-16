@@ -87,7 +87,7 @@ def wright_to_json(input,json_filename_output):
         json.dump(input, output_file, ensure_ascii=False, indent=4)
     return True      
         
-csv_to_json('passwd.txt','passwd.json',':') 
+wright_to_json('passwd.txt','passwd.json',':') 
        
 def catalog_info(catalog_name):
     """Данные о файлах в каталоге."""
